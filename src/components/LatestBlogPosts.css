@@ -1,0 +1,47 @@
+/* src/components/LatestBlogPosts.css */
+
+.latest-blog-posts-container {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  .section-title {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px; /* Adds space below the title */
+  }
+  
+  .latest-blog-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .blog-post-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .blog-post-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s;
+  }
+  
+  .blog-post-card:hover img {
+    opacity: 0.7;
+  }
+  
+  .blog-post-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .blog-post-info {
+    padding: 10px;
+    text-align: center;
+  }
+  

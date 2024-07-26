@@ -1,0 +1,35 @@
+.footer-container {
+  background-color: #343a40; /* Dark background color */
+  color: #fff; /* Light text color */
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-socials {
+  margin-bottom: 10px;
+}
+
+.footer-socials a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #ffa500; /* Orange color on hover */
+}
+
+.footer-contact {
+  margin: 10px 0;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.footer-copyright p {
+  margin: 0;
+  font-size: 0.8rem;
+}

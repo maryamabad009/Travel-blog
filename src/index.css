@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body {
+  font-family: 'Roboto', sans-serif; /* Default font for body text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif; /* Font for headings */
+}
+
+p {
+  font-family: 'Lora', serif; /* Font for paragraphs */
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif; /* Font for navigation links */
+}
+
+.header-navbar {
+  font-family: 'Montserrat', sans-serif; /* Font for navbar */
+}
+
+.search-form .form-control {
+  font-family: 'Roboto', sans-serif; /* Font for search input */
+}

@@ -1,0 +1,103 @@
+/* src/components/Header.css */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.header-navbar {
+  padding: 1rem;
+  background-color: #343a40; /* Dark background color */
+  font-family: 'Montserrat', sans-serif; /* Font for navbar */
+}
+
+.logo {
+  max-height: 50px; /* Adjust logo size */
+}
+
+.search-form {
+  margin-left: auto; /* Align search form to the right */
+  display: flex; /* Make sure the search form displays flex items correctly */
+}
+
+.search-form .form-control {
+  border-radius: 20px; /* Rounded corners for search input */
+  background-color: #495057; /* Darker background for input */
+  color: #fff; /* Light text color for input */
+  border: 1px solid #6c757d; /* Border color for input */
+}
+
+.search-form .form-control::placeholder {
+  color: #bbb; /* Light gray color for placeholder text */
+}
+
+.search-form .btn {
+  border-radius: 20px; /* Rounded corners for search button */
+}
+
+.nav-link {
+  font-size: 1.1rem; /* Adjust font size of nav links */
+  margin: 0 1rem; /* Space between nav links */
+  color: #fff; /* Light text color for nav links */
+  position: relative; /* For underline effect */
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+  color: #ffa500; /* Orange color for hover, focus, and active states */
+  text-decoration: none; /* Remove default underline */
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after,
+.nav-link:active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ffa500; /* Orange color for underline */
+}
+
+.navbar-toggler {
+  border: none; /* Remove border from the toggle button */
+}
+
+.navbar-toggler-icon {
+  background-color: #fff; /* Toggle icon color */
+  border-radius: 4px; /* Optional: rounded corners for the toggle icon */
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: ''; /* Ensures icon appears */
+  display: block;
+  width: 30px; /* Width of the toggle button */
+  height: 3px; /* Thickness of the toggle lines */
+  background-color: #fff; /* White color for the lines */
+  position: relative;
+  top: 5px; /* Space from the top */
+}
+
+.fa-search {
+  color: #fff; /* Search icon color */
+}
+
+/* Ensure search form is visible on small screens */
+@media (max-width: 992px) {
+  .search-form {
+    margin-top: 1rem; /* Add space above the search form on smaller screens */
+  }
+
+  .header-navbar {
+    padding: 0.5rem; /* Adjust navbar padding on smaller screens */
+  }
+
+  .nav-link {
+    font-size: 1rem; /* Smaller font size for nav links on mobile */
+  }
+
+  .logo {
+    max-height: 40px; /* Smaller logo size on mobile */
+  }
+}

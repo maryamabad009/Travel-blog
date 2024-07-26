@@ -1,0 +1,186 @@
+/* src/components/HeroSection.css */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap');
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.hero-subtitle {
+  font-size: 2rem; /* Adjust font size for subtitle */
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
+  font-weight: 700; /* Bold font weight */
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: 'Lora', serif; /* Use Lora font */
+  font-weight: 400;
+}
+
+.hero-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #ffa500; /* Orange color on hover */
+  color: #fff;
+}
+
+.featured-container {
+  padding: 50px 20px;
+  text-align: center;
+  position: relative; 
+}
+
+.section-title {
+  font-family: 'Lora', serif;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+.section-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto; /* Center the wrapper horizontally */
+}
+
+.section-title-wrapper::before,
+.section-title-wrapper::after {
+  content: '';
+  flex: 1;
+  height: 1.5px; /* Line thickness */
+  background-color: #25231f; /* Line color */
+}
+
+.section-title {
+  font-family: 'Lora', serif;
+  font-size: 2.5rem;
+  margin: 0 20px; /* Space between lines and heading */
+}
+.featured-logos {
+  display: flex;
+  justify-content: center;
+  gap: 0; /* Remove space between logos */
+}
+
+.featured-logo {
+  margin: 0 1rem; /* Adjust margin as needed */
+}
+
+.featured-logo img {
+  max-width: 200px; /* Adjust size as needed */
+  height: auto;
+}
+
+.featured-logo:hover img {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.introduction-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.intro-image {
+  flex: 1;
+  text-align: center;
+}
+
+.intro-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.intro-content {
+  max-width: 50%;
+}
+
+.intro-content p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.read-more-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1f1d1b; /* Orange background */
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px; /* Space above the button */
+  }
+  
+  .read-more-button:hover,
+  .read-more-button:focus {
+    background-color: #ff8c00; /* Darker orange on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .hero-subtitle {
+    font-size: 1.5rem; /* Smaller font size for subtitle */
+  }
+
+  .hero-title {
+    font-size: 2.5rem; /* Smaller font size for title */
+  }
+
+  .hero-button {
+    font-size: 1rem; /* Smaller button text */
+    padding: 8px 16px; /* Adjust button padding */
+  }
+
+  .featured-container {
+    padding: 30px 10px; /* Adjust padding for mobile */
+  }
+
+  .section-title {
+    font-size: 2rem; /* Smaller font size for section title */
+  }
+
+  .introduction-container {
+    flex-direction: column;
+  }
+
+  .intro-content {
+    max-width: 100%;
+    text-align: center; /* Center text for mobile */
+  }
+}

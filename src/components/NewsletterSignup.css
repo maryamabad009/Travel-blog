@@ -1,0 +1,40 @@
+/* src/components/NewsletterSignup.css */
+
+.newsletter-signup-container {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .newsletter-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ffa500; /* Orange background */
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .newsletter-button:hover,
+  .newsletter-button:focus {
+    background-color: #ff8c00; /* Darker orange on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
